@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - launch_args (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - launch_args (from `.symlinks/plugins/launch_args/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  launch_args:
+    :path: ".symlinks/plugins/launch_args/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  launch_args: cf36c2a88675a55f33d336678452772a0a319578
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.10.0

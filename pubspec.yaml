@@ -1,0 +1,27 @@
+name: launch_args
+description: A new flutter plugin project.
+version: 1.0.0
+homepage: https://github.com/peiffer-innovations/launch_args
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  logging: ^0.11.4
+  websafe_platform: ^1.0.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.pi.launchargs
+        pluginClass: LaunchArgsPlugin
+      ios:
+        pluginClass: LaunchArgsPlugin
