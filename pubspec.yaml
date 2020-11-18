@@ -1,6 +1,6 @@
 name: launch_args
-description: A new flutter plugin project.
-version: 1.0.0
+description: Plugin to get command line launch args for both Android and iOS.
+version: 1.0.0+1
 homepage: https://github.com/peiffer-innovations/launch_args
 
 environment:
