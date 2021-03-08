@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:launch_args/launch_args.dart';
 
-Future<void> main(List<String> args) async {
+Future<void> main(List<String>? args) async {
   WidgetsFlutterBinding.ensureInitialized();
   args = args?.isNotEmpty == true ? args : (await LaunchArgs.args);
 
@@ -11,7 +11,7 @@ Future<void> main(List<String> args) async {
 class MyApp extends StatelessWidget {
   MyApp({this.args});
 
-  final List<String> args;
+  final List<String>? args;
 
   @override
   Widget build(BuildContext context) {

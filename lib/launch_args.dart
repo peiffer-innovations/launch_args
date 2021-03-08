@@ -1,8 +1,9 @@
 import 'dart:async';
+import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:logging/logging.dart';
-import 'package:websafe_platform/websafe_platform.dart';
 
 /// Plugin to retrieve the list of command line arguments that were passed to
 /// the application.
@@ -16,11 +17,13 @@ class LaunchArgs {
   static Future<List<String>> get args async {
     var args = <String>[];
 
-    if (WebsafePlatform().isAndroid() || WebsafePlatform().isIOS()) {
-      try {
-        args = List<String>.from(await _channel.invokeMethod('args'));
-      } catch (e, stack) {
-        _logger.severe('Error getting launch args.', e, stack);
+    if (!kIsWeb) {
+      if (Platform.isAndroid || Platform.isIOS) {
+        try {
+          args = List<String>.from(await _channel.invokeMethod('args'));
+        } catch (e, stack) {
+          _logger.severe('Error getting launch args.', e, stack);
+        }
       }
     }
 
