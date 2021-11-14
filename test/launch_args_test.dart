@@ -15,4 +15,6 @@ void main() {
   tearDown(() {
     channel.setMockMethodCallHandler(null);
   });
+
+  test('no-op', () {});
 }
