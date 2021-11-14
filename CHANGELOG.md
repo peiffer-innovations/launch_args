@@ -1,3 +1,8 @@
+## [2.0.0+2] - November 14th, 2021
+
+* Swapped GH workflow publisher
+
+
 ## [2.0.0+1] - September 26th, 2021
 
 * Dependency updates
