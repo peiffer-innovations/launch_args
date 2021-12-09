@@ -1,3 +1,8 @@
+## [2.0.0+3] - December 8th, 2021
+
+* Git ignore on android
+
+
 ## [2.0.0+2] - November 14th, 2021
 
 * Swapped GH workflow publisher
