@@ -1,3 +1,8 @@
+## [2.0.0+4] - January 3rd, 2022
+
+* Dart 2.15
+
+
 ## [2.0.0+3] - December 8th, 2021
 
 * Git ignore on android
