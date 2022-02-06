@@ -1,3 +1,8 @@
+## [2.0.1] - February 6th, 2022
+
+* Android v2 updates
+
+
 ## [2.0.0+4] - January 3rd, 2022
 
 * Dart 2.15
