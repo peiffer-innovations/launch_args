@@ -1,5 +1,5 @@
 .idea/
-.vagrant/
+.settings/.vagrant/
 .sconsign.dblite
 .svn/
 
