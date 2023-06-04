@@ -1,3 +1,8 @@
+## [2.0.2+2] - June 4th, 2023
+
+* Fix deprecated warnings in tests.
+
+
 ## [2.0.2+1] - January 31, 2023
 
 * Automated dependency updates

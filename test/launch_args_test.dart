@@ -7,13 +7,21 @@ void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() {
-    channel.setMockMethodCallHandler((MethodCall methodCall) async {
-      return ['arg1', 'arg2', 'arg3'];
-    });
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(
+      channel,
+      (MethodCall methodCall) async {
+        return ['arg1', 'arg2', 'arg3'];
+      },
+    );
   });
 
   tearDown(() {
-    channel.setMockMethodCallHandler(null);
+    TestDefaultBinaryMessengerBinding.instance.defaultBinaryMessenger
+        .setMockMethodCallHandler(
+      channel,
+      null,
+    );
   });
 
   test('no-op', () {});
