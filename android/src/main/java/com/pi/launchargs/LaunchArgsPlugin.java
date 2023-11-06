@@ -1,5 +1,7 @@
 package com.pi.launchargs;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -38,14 +40,25 @@ public class LaunchArgsPlugin implements ActivityAware, FlutterPlugin, MethodCal
   @Override
   public void onAttachedToActivity(@NonNull ActivityPluginBinding binding) {
     args.clear();
-    Bundle bundle = binding.getActivity().getIntent().getExtras();
-    if (bundle != null) {
-      Set<String> keys = bundle.keySet();
 
-      for (String key : keys) {
-        args.add("--" + key);
-        args.add(String.valueOf(bundle.get(key)));
+    try {
+      Activity activity = binding.getActivity();
+      if (activity != null) {
+        Intent intent = activity.getIntent();
+        if (intent != null) {
+          Bundle bundle = intent.getExtras();
+          if (bundle != null) {
+            Set<String> keys = bundle.keySet();
+
+            for (String key : keys) {
+              args.add("--" + key);
+              args.add(String.valueOf(bundle.get(key)));
+            }
+          }
+        }
       }
+    } catch (Exception e) {
+      // no-op; no args
     }
   }
 
