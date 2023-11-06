@@ -1,3 +1,8 @@
+## [2.0.3] - November 6th, 2023
+
+* Pix for NPE on some Android devices.
+
+
 ## [2.0.2+2] - June 4th, 2023
 
 * Fix deprecated warnings in tests.
