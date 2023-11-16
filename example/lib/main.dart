@@ -9,7 +9,7 @@ Future<void> main(List<String>? args) async {
 }
 
 class MyApp extends StatelessWidget {
-  MyApp({this.args});
+  const MyApp({super.key, this.args});
 
   final List<String>? args;
 

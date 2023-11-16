@@ -1,6 +1,6 @@
 name: 'launch_args'
 description: 'Plugin to get command line launch args for both Android and iOS.'
-version: '2.0.3+1'
+version: '2.0.5'
 homepage: 'https://github.com/peiffer-innovations/launch_args'
 
 environment:
@@ -13,6 +13,7 @@ dependencies:
   logging: '^1.1.1'
 
 dev_dependencies:
+  flutter_lints: '^3.0.1'
   flutter_test:
     sdk: 'flutter'
 
@@ -48,5 +49,6 @@ ignore_updates:
   - 'term_glyph'
   - 'test_api'
   - 'typed_data'
+  - 'uuid'
   - 'vector_math'
   - 'webdriver'

@@ -1,3 +1,8 @@
+## [2.0.4] - November 15th, 2023
+
+* Updated to standard analysis rules
+
+
 ## [2.0.3+1] - November 6th, 2023
 
 * Fix for NPE on some Android devices.
