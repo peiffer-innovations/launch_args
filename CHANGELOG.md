@@ -1,3 +1,8 @@
+## [3.0.0] - June 4, 2024
+
+* Removed reference to `PluginRegistry.Registrar` which was removed in Flutter 3.29.0
+* Major version bump due to potential breaking change for Flutter versions 3.29.0+
+
 ## [2.0.5+1] - May 21, 2024
 
 * Automated dependency updates
